@@ -36,7 +36,7 @@
           version: 'v2.7' // use graph api version 2.5
         });
         FB.getLoginStatus(function (response) {
-          statusChangeCallback(response);
+          this.statusChangeCallback(response);
         });
       };
       (function (d, s, id) {
@@ -66,7 +66,7 @@
             $('#UserName')[0].innerHTML = response.name;
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
           });
-          var posts = getPost();
+          var posts = this.getPost();
           /*
            $.post(receive.go, {
            name: UserName;
@@ -99,12 +99,12 @@
         alert('hi')
         FB.getLoginStatus(function (response) {
           if (response.status === 'connected') {
-            statusChangeCallback(response);
+            this.statusChangeCallback(response);
           }
           else {
             FB.login(function (response) {
               cosole.log(response)
-              statusChangeCallback(response);
+              this.statusChangeCallback(response);
             }, {scope: 'email,public_profile,user_posts', return_scopes: true});
           }
         });
