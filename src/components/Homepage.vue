@@ -60,7 +60,7 @@
       statusChangeCallback : function(response) {
         if (response.status === 'connected') {
           $("#login").hide();
-          var profile = "<div class=\"row\" id=\"logout\"><div class=\"col s12 m10 offset-m1 l8 offset-l2\"><div class=\"card blue-grey darken-1\"><div class=\"card-content white-text\"><span class=\"card-title\" id=\"UserName\"></span><p>Profile Information goes here</p></div><div class=\"card-action\"><a class=\"waves-effect waves-light blue darken-2 btn\" onclick=\"IWantToLogout();\"><i class=\"fa fa-facebook-official\"></i>&nbsp;&nbsp;facebook logout</a></div></div></div></div>";
+          var profile = "<div class=\"row\" id=\"logout\"><div class=\"col s12 m10 offset-m1 l8 offset-l2\"><div class=\"card blue-grey darken-1\"><div class=\"card-content white-text\"><span class=\"card-title\" id=\"UserName\"></span><p>Profile Information goes here</p></div><div class=\"card-action\"><a class=\"waves-effect waves-light blue darken-2 btn\" v-on:click=\"IWantToLogout\"><i class=\"fa fa-facebook-official\"></i>&nbsp;&nbsp;facebook logout</a></div></div></div></div>";
           $("main")[0].innerHTML = profile;
           FB.api('/me', function (response) {
             $('#UserName')[0].innerHTML = response.name;
