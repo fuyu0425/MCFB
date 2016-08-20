@@ -22,7 +22,9 @@
   </main>
 
 </template>
+<style src="../css/style.css"/>
 <script>
 import '../js/fb_api'
+import '../js/myjs'
 
 </script>

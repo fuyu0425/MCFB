@@ -67,7 +67,7 @@ window.fbAsyncInit = function() {
         xfbml      : true,  // parse social plugins on this page
         version    : 'v2.7' // use graph api version 2.5
     });
-
+    alert('hi')
     FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
     });
