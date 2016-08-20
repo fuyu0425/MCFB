@@ -58,13 +58,13 @@
       <file leaf-file-name="Homepage.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Homepage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+            <state relative-caret-position="505">
+              <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
               <folding>
-                <marker date="1471704561000" expanded="true" signature="1367:1373" ph=" " />
-                <marker date="1471704561000" expanded="true" signature="1373:1379" ph=" " />
-                <marker date="1471704561000" expanded="true" signature="3588:3594" ph=" " />
-                <marker date="1471704561000" expanded="true" signature="3594:3600" ph=" " />
+                <marker date="1471704833000" expanded="true" signature="1304:1310" ph=" " />
+                <marker date="1471704833000" expanded="true" signature="1310:1316" ph=" " />
+                <marker date="1471704833000" expanded="true" signature="3436:3442" ph=" " />
+                <marker date="1471704833000" expanded="true" signature="3442:3448" ph=" " />
               </folding>
             </state>
           </provider>
@@ -116,7 +116,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="773" />
@@ -328,15 +328,15 @@
       <workItem from="1471688602883" duration="871000" />
       <workItem from="1471697106965" duration="820000" />
       <workItem from="1471699455890" duration="3389000" />
-      <workItem from="1471704184054" duration="378000" />
+      <workItem from="1471704184054" duration="639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5458000" />
+    <option name="totallyTimeSpent" value="5719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="23" width="1280" height="773" extended-state="0" />
+    <frame x="1" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -426,10 +426,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1471704561000" expanded="true" signature="1367:1373" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="1373:1379" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3588:3594" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3594:3600" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1304:1310" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1310:1316" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3436:3442" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3442:3448" ph=" " />
           </folding>
         </state>
       </provider>
@@ -486,10 +486,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1471704561000" expanded="true" signature="1367:1373" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="1373:1379" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3588:3594" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3594:3600" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1304:1310" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1310:1316" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3436:3442" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3442:3448" ph=" " />
           </folding>
         </state>
       </provider>
@@ -538,10 +538,10 @@
         <state relative-caret-position="494">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <marker date="1471704561000" expanded="true" signature="1367:1373" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="1373:1379" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3588:3594" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3594:3600" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1304:1310" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1310:1316" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3436:3442" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3442:3448" ph=" " />
           </folding>
         </state>
       </provider>
@@ -656,13 +656,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Homepage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+        <state relative-caret-position="505">
+          <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
           <folding>
-            <marker date="1471704561000" expanded="true" signature="1367:1373" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="1373:1379" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3588:3594" ph=" " />
-            <marker date="1471704561000" expanded="true" signature="3594:3600" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1304:1310" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="1310:1316" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3436:3442" ph=" " />
+            <marker date="1471704833000" expanded="true" signature="3442:3448" ph=" " />
           </folding>
         </state>
       </provider>
