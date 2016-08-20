@@ -81,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Homepage.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="111" column="74" selection-start-line="111" selection-start-column="74" selection-end-line="111" selection-end-column="74" />
+              <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -260,12 +260,12 @@
       <workItem from="1471704184054" duration="2103000" />
       <workItem from="1471707039095" duration="342000" />
       <workItem from="1471708486918" duration="6619000" />
-      <workItem from="1471729680212" duration="649000" />
+      <workItem from="1471729680212" duration="873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16494000" />
+    <option name="totallyTimeSpent" value="16718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="30" width="1280" height="773" extended-state="6" />
@@ -761,7 +761,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Homepage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="111" column="74" selection-start-line="111" selection-start-column="74" selection-end-line="111" selection-end-column="74" />
+          <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
           <folding />
         </state>
       </provider>

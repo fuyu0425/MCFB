@@ -100,13 +100,15 @@
         var self = this
         FB.api('/me/posts', function (response) {
           var data = response.data
-          var ans = [];
+          var ans = "";
           for (var i = 0; i < data.length; i++) {
             var str = "";
             if ('story' in data[i])str += data[i].story;
             if ('message' in data[i])str += data[i].message;
-            ans.push(str)
-
+            ans=ans+str
+            if( i != (data.length -1) ){
+              ans+='\0'
+            }
           }
           console.log(ans)
           $.post("http://140.113.195.211:9090/play",{name : self.username , text : ans });
