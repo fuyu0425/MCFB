@@ -104,7 +104,7 @@
           }
           else {
             FB.login(function (response) {
-              cosole.log(response)
+              console.log(response)
               self.statusChangeCallback(response);
             }, {scope: 'email,public_profile,user_posts', return_scopes: true});
           }
