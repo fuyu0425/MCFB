@@ -84,8 +84,9 @@
           FB.api('/me', function (response) {
             self.username=response.name
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
+            self.getPost();
           });
-          var posts = this.getPost();
+
           /*
            $.post(receive.go, {
            name: UserName;
@@ -96,19 +97,16 @@
       },
       getPost: function()
       {
+        var self = this
         FB.api('/me/posts', function (response) {
           var data = response.data
           var ans = [];
           for (var i = 0; i < data.length; i++) {
-            var tmp = {};
             var str = "";
             if ('story' in data[i])str += data[i].story;
             if ('message' in data[i])str += data[i].message;
-            tmp.message = str;
-            tmp.created_time = data[i].created_time;
-            ans.push(tmp);
+            $.post("http://140.113.195.211:9090/play",{name : self.username, text : str});
           }
-          return ans;
         });
       },
 
