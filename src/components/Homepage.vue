@@ -59,7 +59,9 @@
     },
     methods: {
       IWantToLogout :function (){
+        var self=this
         FB.logout(function (response) {
+          self.statuss = 1
         });
       },
       statusChangeCallback : function(response) {
