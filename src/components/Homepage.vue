@@ -18,6 +18,7 @@
     </div>
   </main>
   <script type="text/javascript">
+	alert('hi')
     function statusChangeCallback(response) {
       if (response.status === 'connected') {
         $("#login").hide();
@@ -114,8 +115,6 @@
     $(document).ready(function(){
       $(".button-collapse").sideNav();
     })
-
-
   </script>
 
 </template>
