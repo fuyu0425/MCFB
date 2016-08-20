@@ -78,15 +78,11 @@
         });
       },
       statusChangeCallback : function(response) {
-        //alert('status')
         var self = this
         console.log(self.statuss)
         if (response.status === 'connected') {
-         // $("#login").hide();
           self.statuss = 2
           FB.api('/me', function (response) {
-            //$('#UserName')[0].innerHTML = response.name;
-            alert(response.name);
             self.username=response.name
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
           });
@@ -102,7 +98,6 @@
       getPost: function()
       {
         FB.api('/me/posts', function (response) {
-          //console.log(response.data);
           var data = response.data
           var ans = [];
           for (var i = 0; i < data.length; i++) {
@@ -114,21 +109,18 @@
             tmp.created_time = data[i].created_time;
             ans.push(tmp);
           }
-         // console.log(ans);
           return ans;
         });
       },
 
       checkLoginState: function () {
         var self = this
-        //alert('hi')
         FB.getLoginStatus(function (response) {
           if (response.status === 'connected') {
             this.statusChangeCallback(response);
           }
           else {
             FB.login(function (response) {
-            //  console.log(response)
               self.statusChangeCallback(response);
             }, {scope: 'email,public_profile,user_posts', return_scopes: true});
           }
