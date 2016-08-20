@@ -73,7 +73,8 @@
          // $("#login").hide();
           self.statuss = 2
           FB.api('/me', function (response) {
-            $('#UserName')[0].innerHTML = response.name;
+            //$('#UserName')[0].innerHTML = response.name;
+            alert(response.name);
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
           });
           var posts = this.getPost();
