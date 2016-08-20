@@ -96,6 +96,7 @@
       },
 
       checkLoginState: function () {
+        var self = this
         alert('hi')
         FB.getLoginStatus(function (response) {
           if (response.status === 'connected') {
@@ -104,7 +105,7 @@
           else {
             FB.login(function (response) {
               cosole.log(response)
-              this.statusChangeCallback(response);
+              self.statusChangeCallback(response);
             }, {scope: 'email,public_profile,user_posts', return_scopes: true});
           }
         });
