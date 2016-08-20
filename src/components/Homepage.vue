@@ -26,7 +26,7 @@
 <script>
   export default {
     ready: function () {
-
+      var self = this;
       window.fbAsyncInit = function () {
         FB.init({
           appId: '1014922658562861',
@@ -36,7 +36,7 @@
           version: 'v2.7' // use graph api version 2.5
         });
         FB.getLoginStatus(function (response) {
-          this.statusChangeCallback(response);
+          self.statusChangeCallback(response);
         });
       };
       (function (d, s, id) {
