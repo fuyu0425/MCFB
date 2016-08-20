@@ -5,7 +5,7 @@
         <div class="card blue-grey darken-1">
           <div v-if="statuss ==1">
           <div class="card-image">
-            <img src="http://2.bp.blogspot.com/-7ywyKE1iKaA/Tyfbcob7R3I/AAAAAAAAIwQ/h83RQebeEJ8/s1600/2012-01-29_22.15.39.png">
+          <!--  <img src="http://2.bp.blogspot.com/-7ywyKE1iKaA/Tyfbcob7R3I/AAAAAAAAIwQ/h83RQebeEJ8/s1600/2012-01-29_22.15.39.png"> -->
             <span class="card-title">Try it!</span>
           </div>
 
