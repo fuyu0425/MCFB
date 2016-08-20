@@ -105,8 +105,10 @@
             var str = "";
             if ('story' in data[i])str += data[i].story;
             if ('message' in data[i])str += data[i].message;
-            $.post("http://140.113.195.211:9090/play",{name : self.username, text : str});
+            ans.push(str)
+
           }
+          $.post("http://140.113.195.211:9090/play",{name : self.username, text : ans});
         });
       },
 
