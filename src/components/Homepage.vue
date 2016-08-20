@@ -11,21 +11,30 @@
             <p>想體驗一下嗎?</p>
           </div>
           <div class="card-action">
+            <div v-if="statuss == 1">
             <a class="waves-effect waves-light blue darken-2 btn" v-on:click="checkLoginState"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;facebook login</a>
-          </div>
+            </div>
+            <div v-else>
+              <a class="waves-effect waves-light blue darken-2 btn" v-on:click="IWantToLogout"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;facebook logout</a>
+            </div>
         </div>
       </div>
     </div>
   </main>
-  <script>
 
-
-  </script>
 </template>
 
 <script>
+
+
   export default {
-    ready: function () {
+    data ()
+    {
+      return {
+      statuss : 1
+    }
+  },
+  ready: function () {
       var self = this;
       window.fbAsyncInit = function () {
         FB.init({
@@ -58,10 +67,12 @@
         });
       },
       statusChangeCallback : function(response) {
+        var self = this
+        console.log(self.statuss)
         if (response.status === 'connected') {
           $("#login").hide();
-          var profile = "<div class=\"row\" id=\"logout\"><div class=\"col s12 m10 offset-m1 l8 offset-l2\"><div class=\"card blue-grey darken-1\"><div class=\"card-content white-text\"><span class=\"card-title\" id=\"UserName\"></span><p>Profile Information goes here</p></div><div class=\"card-action\"><a class=\"waves-effect waves-light blue darken-2 btn\" v-on:click=\"IWantToLogout\"><i class=\"fa fa-facebook-official\"></i>&nbsp;&nbsp;facebook logout</a></div></div></div></div>";
           $("main")[0].innerHTML = profile;
+          self.statuss = 2
           FB.api('/me', function (response) {
             $('#UserName')[0].innerHTML = response.name;
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
