@@ -14,13 +14,14 @@
         flex-direction: column;
       }
 
-      main {
+       main {
         flex: 1 0 auto;
       }
-  </style
+  </style>
   </head>
-  <body >
-    <div id="app">
+  <body>
+  <main>
+<div id="app">
       <nav>
         <div class="row">
           <div class="col l10 offset-l1 m10 offset-m1 s12">
@@ -42,8 +43,12 @@
           </div>
         </div>
       </nav>
-      <router-view ></router-view>
 
+
+    <router-view></router-view>
+    </div>
+  </main>
+<!--</div>-->
     <!-- footer -->
     <footer class="page-footer">
       <div class="container">
@@ -68,6 +73,5 @@
         </div>
       </div>
     </footer>
-      </div>
   </body>
 </html>
