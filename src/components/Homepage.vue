@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="row" id="login">
+    <div class="row" >
       <div class="col s12 m10 offset-m1 l8 offset-l2">
         <div class="card blue-grey darken-1">
           <div class="card-image">
@@ -62,6 +62,7 @@
         var self=this
         FB.logout(function (response) {
           self.statuss = 1
+          $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">Login</a></li>";
         });
       },
       statusChangeCallback : function(response) {
@@ -72,8 +73,8 @@
          // $("#login").hide();
           self.statuss = 2
           FB.api('/me', function (response) {
-           // $('#UserName')[0].innerHTML = response.name;
-            //$("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
+            $('#UserName')[0].innerHTML = response.name;
+            $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
           });
           var posts = this.getPost();
           /*
