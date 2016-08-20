@@ -23,7 +23,6 @@
   export default {
     ready : function() {
       function statusChangeCallback(response) {
-		  alert('hello')
         if (response.status === 'connected') {
           $("#login").hide();
           var profile = "<div class=\"row\" id=\"logout\"><div class=\"col s12 m10 offset-m1 l8 offset-l2\"><div class=\"card blue-grey darken-1\"><div class=\"card-content white-text\"><span class=\"card-title\" id=\"UserName\"></span><p>Profile Information goes here</p></div><div class=\"card-action\"><a class=\"waves-effect waves-light blue darken-2 btn\" onclick=\"IWantToLogout();\"><i class=\"fa fa-facebook-official\"></i>&nbsp;&nbsp;facebook logout</a></div></div></div></div>";
@@ -33,7 +32,6 @@
             $('#UserName')[0].innerHTML = response.name;
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">"+response.name+"</a></li>";
           });
-          alert('yo')
           posts = getPost();
           /*
            $.post(receive.go, {
@@ -95,7 +93,6 @@
           xfbml      : true,  // parse social plugins on this page
           version    : 'v2.7' // use graph api version 2.5
         });
-        alert('hi123')
         FB.getLoginStatus(function(response) {
           statusChangeCallback(response);
         });
