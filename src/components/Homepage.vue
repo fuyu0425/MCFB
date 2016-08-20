@@ -14,13 +14,12 @@
           </div>
             </div>
           <div v-else>
-            <div class="row">
-              <div class="col s12 m10 offset-m1 l8 offset-l2">
-                <div class="card blue-grey darken-1">
+
                   <div class="card-content white-text">
                     <span class="card-title\" id="{{ username }}"></span>
                     <p>Profile Information goes here</p>
                   </div>
+
             </div>
           <div class="card-action">
             <div v-if="statuss == 1">
