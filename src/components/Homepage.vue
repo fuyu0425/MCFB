@@ -129,14 +129,4 @@
     }
   }
 </script>
-<style>
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
 
-  main {
-
-  }
-  </style>
