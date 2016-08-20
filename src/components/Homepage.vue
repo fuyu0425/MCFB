@@ -11,7 +11,7 @@
             <p>想體驗一下嗎?</p>
           </div>
           <div class="card-action">
-            <a class="waves-effect waves-light blue darken-2 btn" onclick="checkLoginState();"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;facebook login</a>
+            <a class="waves-effect waves-light blue darken-2 btn" v-on:click="checkLoginState"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;facebook login</a>
           </div>
         </div>
       </div>
