@@ -1,5 +1,5 @@
 <template>
-  <main style="flex: 1 0 auto;">
+  <main>
     <div class="row" >
       <div class="col s12 m10 offset-m1 l8 offset-l2">
         <div class="card blue-grey darken-1">
