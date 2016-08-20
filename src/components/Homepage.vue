@@ -63,14 +63,15 @@
         });
       },
       statusChangeCallback : function(response) {
+        alert('status')
         var self = this
         console.log(self.statuss)
         if (response.status === 'connected') {
           $("#login").hide();
           self.statuss = 2
           FB.api('/me', function (response) {
-            $('#UserName')[0].innerHTML = response.name;
-            $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
+           // $('#UserName')[0].innerHTML = response.name;
+            //$("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
           });
           var posts = this.getPost();
           /*
