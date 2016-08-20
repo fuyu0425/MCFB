@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Homepage from './components/Homepage'
 import About from './components/About'
-
+import Hello from './components/Hello'
 Vue.use(VueRouter)
 /* eslint-disable no-new */
 var app = Vue.extend({})
@@ -14,6 +14,9 @@ router.map(
     },
     'About': {
       component: About
+    },
+    'Hello': {
+      component: Hello
     }
   }
 )
