@@ -53,7 +53,7 @@
             <p>Nickname : Genius</p>
           </div>
           <div class="card-action">
-            <a href="#">Github</a>
+            <a href="https://github.com/Kaiyeh">Github</a>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@
             <p>Nickname : GOD</p>
           </div>
           <div class="card-action">
-            <a href="#">Github</a>
+            <a href="https://github.com/FrozenKP">Github</a>
           </div>
         </div>
       </div>
