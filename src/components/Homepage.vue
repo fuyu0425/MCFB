@@ -1,4 +1,5 @@
 <template>
+  <main>
     <div class="row" id="login">
       <div class="col s12 m10 offset-m1 l8 offset-l2">
         <div class="card blue-grey darken-1">
@@ -15,8 +16,7 @@
         </div>
       </div>
     </div>
-
-
+  </main>
 </template>
 
 <script>
