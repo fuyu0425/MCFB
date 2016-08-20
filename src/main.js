@@ -6,7 +6,7 @@ import Hello from './components/Hello'
 Vue.use(VueRouter)
 /* eslint-disable no-new */
 var app = Vue.extend({})
-var router = new VueRouter()
+var router = new VueRouter( {hashbang : false , history: true,})
 router.map(
   {
     '/': {
