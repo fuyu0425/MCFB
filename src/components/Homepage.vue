@@ -16,7 +16,7 @@
           <div v-else>
 
                   <div class="card-content white-text">
-                    <span class="card-title\" id="{{ username }}"></span>
+                    <span class="card-title" >{{ username }}</span>
                     <p>Profile Information goes here</p>
                   </div>
 
