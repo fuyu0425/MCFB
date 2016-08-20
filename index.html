@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minecraft FB</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>mcfb</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <div class="row">
+          <div class="col l10 offset-l1 m10 offset-m1 s12">
+            <div class="nav-wrapper">
+              <a v-link="'/'" class="brand-logo">&nbsp;&nbsp;MCFB</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <!-- <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
+              <ul class="right hide-on-med-and-down">
+                <li><a v-link="'About'">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a v-link="'/'">Login</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a v-link="'About'">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a v-link="'/'">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <router-view></router-view>
+    </div>
+    <!-- footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">How to used this WEB</h5>
+            <p class="grey-text text-lighten-4">Login with Facebook, download <a href="#">minecrift</a>, and then login to 140.113.195.211:12369</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Friend Site</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="http://toolbox.ink">NCTU_ToolBox</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Our server's lab</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Copyright © 2016 toolbox, Inc.
+          <a class="grey-text text-lighten-4 right" href="https://major2016.hackntu.org/">hackNTU</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/3e37146c77.js"></script>
+    <script>import 'src/js/myjs'</script>
+
+  </body>
+</html>
