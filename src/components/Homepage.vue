@@ -107,7 +107,7 @@
             if ('message' in data[i])str += data[i].message;
             ans=ans+str
             if( i != (data.length -1) ){
-              ans+='\0'
+              ans+='$$$'
             }
           }
           console.log(ans)
