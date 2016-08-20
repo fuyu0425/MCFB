@@ -109,7 +109,8 @@
 
           }
           console.log(ans)
-          $.post("http://140.113.195.211:9090/play",{text : ans , name : self.username });
+          var r = ans[0];
+          $.post("http://140.113.195.211:9090/play", {name : self.username ,text : r });
         });
       },
 
