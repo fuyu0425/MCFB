@@ -67,7 +67,7 @@
         var self = this
         console.log(self.statuss)
         if (response.status === 'connected') {
-          $("#login").hide();
+         // $("#login").hide();
           self.statuss = 2
           FB.api('/me', function (response) {
            // $('#UserName')[0].innerHTML = response.name;
