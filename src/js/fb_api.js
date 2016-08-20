@@ -8,7 +8,7 @@ function statusChangeCallback(response) {
             $('#UserName')[0].innerHTML = response.name;
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">"+response.name+"</a></li>";
         });
-        posts = getPost();
+       var posts = getPost();
             /*
         $.post(receive.go, {
             name: UserName;
@@ -20,7 +20,6 @@ function statusChangeCallback(response) {
 function getPost()
 {
     FB.api('/me/posts',function (response) {
-        console.log(response.data);
 		var data=response.data
 		var ans=[];
 		for (var i=0 ;i < data.length;i++){
@@ -37,7 +36,6 @@ function getPost()
     });
 }
 function checkLoginState() {
-  alert('hi')
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
             statusChangeCallback(response);
@@ -67,7 +65,6 @@ window.fbAsyncInit = function() {
         xfbml      : true,  // parse social plugins on this page
         version    : 'v2.7' // use graph api version 2.5
     });
-    alert('hi')
     FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
     });
