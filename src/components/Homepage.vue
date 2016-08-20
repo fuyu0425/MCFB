@@ -74,7 +74,7 @@
     function IWantToLogout() {
       FB.logout(function(response) {
         $("#logout").hide();
-        var profile = "<div class=\"row\" id=\"login\"><div class=\"col s12 m10 offset-m1 l8 offset-l2\"><div class=\"card blue-grey darken-1\"><div class=\"card-image\"><img src=\"http://2.bp.blogspot.com/-7ywyKE1iKaA/Tyfbcob7R3I/AAAAAAAAIwQ/h83RQebeEJ8/s1600/2012-01-29_22.15.39.png\"><span class=\"card-title\">Try it!</span></div><div class=\"card-content white-text\"><p>想體驗一下嗎?123</p></div><div class=\"card-action\"><a class=\"waves-effect waves-light blue darken-2 btn\" onclick=\"checkLoginState();\"><i class=\"fa fa-facebook-official\"></i>&nbsp;&nbsp;facebook login</a></div></div></div></div>";
+        var profile = "<div class=\"row\" id=\"login\"><div class=\"col s12 m10 offset-m1 l8 offset-l2\"><div class=\"card blue-grey darken-1\"><div class=\"card-image\"><img src="http://2.bp.blogspot.com/-7ywyKE1iKaA/Tyfbcob7R3I/AAAAAAAAIwQ/h83RQebeEJ8/s1600/2012-01-29_22.15.39.png"><span class=\"card-title\">Try it!</span></div><div class=\"card-content white-text\"><p>想體驗一下嗎?123</p></div><div class=\"card-action\"><a class=\"waves-effect waves-light blue darken-2 btn\" onclick=\"checkLoginState();\"><i class=\"fa fa-facebook-official\"></i>&nbsp;&nbsp;facebook login</a></div></div></div></div>";
         $("main")[0].innerHTML = profile;
         $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">Login</a></li>";
       });
@@ -95,31 +95,25 @@
 
 
 
-    }
+
   </script>
 </template>
 
 <script>
   export default {
-    ready : function() {
-      window.fbAsyncInit = function() {
+    ready: function () {
+      window.fbAsyncInit = function () {
         FB.init({
-          appId      : '1014922658562861',
-          cookie     : true,  // enable cookies to allow the server to access
+          appId: '1014922658562861',
+          cookie: true,  // enable cookies to allow the server to access
           // the session
-          xfbml      : true,  // parse social plugins on this page
-          version    : 'v2.7' // use graph api version 2.5
+          xfbml: true,  // parse social plugins on this page
+          version: 'v2.7' // use graph api version 2.5
         });
-        FB.getLoginStatus(function(response) {
+        FB.getLoginStatus(function (response) {
           statusChangeCallback(response);
         });
       };
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.7&appId=1014922658562861";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
     }
+  }
 </script>
