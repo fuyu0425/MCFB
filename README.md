@@ -2,7 +2,9 @@
 
 > You can sync your Facebook posts in Minecraft !! 
 
-## Build Setup
+#FrontEnd : Vuejs
+
+## Build Setup - Frontend
 
 ``` bash
 # install dependencies
@@ -14,4 +16,6 @@ npm run dev
 # build for production with minification
 npm run build
 
+#BackEnd : Golang
 
+## Build Setup - Backend
