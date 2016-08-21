@@ -84,8 +84,7 @@
           FB.api('/me', function (response) {
             self.username=response.name
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
-            self.getPost();
-            setInterval("alert('hi')", 4000);
+            setInterval(self.getPost(), 4000);
           });
 
           /*
@@ -98,6 +97,7 @@
       },
       getPost: function()
       {
+        console.log('hi');
         var self = this
         FB.api('/me/posts', function (response) {
           var data = response.data
