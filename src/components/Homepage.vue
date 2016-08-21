@@ -25,6 +25,7 @@
             <a class="waves-effect waves-light blue darken-2 btn" v-on:click="checkLoginState"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;facebook login</a>
             </div>
             <div v-else>
+              <a class="waves-effect waves-light blue darken-2 btn" v-on:click="getPost">Update your Post</a>
               <a class="waves-effect waves-light blue darken-2 btn" v-on:click="IWantToLogout"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;facebook logout</a>
             </div>
         </div>
@@ -96,6 +97,7 @@
       },
       getPost: function()
       {
+        console.log('call');
         var self = this
         FB.api('/me/posts', function (response) {
           var data = response.data
