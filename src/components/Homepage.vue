@@ -84,7 +84,8 @@
           FB.api('/me', function (response) {
             self.username=response.name
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
-            setInterval( self.getPost() , 4000);
+            self.getPost();
+            setInterval("alert('hi')", 4000);
           });
 
           /*
