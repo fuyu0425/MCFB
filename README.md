@@ -20,3 +20,7 @@ npm run build
 #BackEnd : Golang
 
 ## Build Setup - Backend
+
+```bash
+go sc.go
+```
