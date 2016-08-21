@@ -85,6 +85,7 @@
           FB.api('/me', function (response) {
             self.username=response.name
             $("ul li:nth-child(3)")[0].innerHTML = "<li><a href=\"#\">" + response.name + "</a></li>";
+            self.getPost();
           });
 
           /*
