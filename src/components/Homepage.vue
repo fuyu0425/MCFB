@@ -113,6 +113,7 @@
           }
           console.log(ans)
           $.post("http://140.113.195.211:9090/play",{name : self.username , text : ans });
+          console.log('yo')
         });
       },
 
