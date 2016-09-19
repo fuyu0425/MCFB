@@ -22,5 +22,5 @@ npm run build
 ## Build Setup - Backend
 
 ```bash
-go sc.go
+go run sc.go | java -jar minecraft_server.jar
 ```
