@@ -22,12 +22,12 @@ npm run build
 ## Build Setup - Backend
 
 ```bash
-#get go-mcpi-api
+# get go-mcpi-api
 go get github.com/FrozenKP/go-mcpi-api
 
-#install server
+# install server
 git clone https://github.com/teachthenet/TeachCraft-Server.git
 
-＃ start
+# start
 go run sc.go | java -Xms3036M -Xmx3036M -jar Minecraft_Server.jar
 ```
